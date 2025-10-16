@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todoApp">
+        <h2>
+          To-Do List <img src="images/icon.png" alt="" /><button
+            onclick="resetTask()"
+            class="resetBtn"
+          >
+            Reset
+          </button>
+        </h2>
+
+        <div class="row">
+          <input type="text" id="inputBox" placeholder="Add your text" />
+          <button class="btn" onclick="addTask()">Add</button>
+        </div>
+        <ul id="listContainer">
+          <!-- <li class="checked">Task1</li>
+          <li>Task2</li>
+          <li>Task3</li> -->
+        </ul>
+        <!-- <button class="deleteBtn">Delete</button> -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
